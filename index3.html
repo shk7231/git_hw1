@@ -3,47 +3,80 @@
 <head>
 	<meta charset="utf-8">
 	<title>질문지</title>
+	<link href="stylesheet/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1>김소희는?</h1>
-	<form action="/update.php" method="post">
-	이름 : 
-		<input type="text" name="type" value="user"/>
-	<br/>
-	성별 : 
-		<input type="radio" name="sex" value="m"/>남
-		<input type="radio" name="sex" value="f"/>여
-	<br/>
-	나의 생일은 몇월? : <select name="month">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
-		<option value="6">6</option>
-		<option value="7">7</option>
-		<option value="8">8</option>
-		<option value="9">9</option>
-		<option value="10">10</option>
-		<option value="11">11</option>
-		<option value="12">12</option>
-	</select>
-	<br/>
-	나의 대학교는? : 
-	<input type="text" name="university" value="school"/>
-	<br/>
-	내가 가고 싶어하는 여행지는?
-	<input type="checkbox" name="song" value="1">이탈리아-피란체
-	<input type="checkbox" name="song" value="2">크로아티아-두브르브루크
-	<input type="checkbox" name="song" value="3">중국-북경
-	<input type="checkbox" name="song" value="4">체코-프라하
-	<input type="checkbox" name="song" value="5">일본-도쿄
-	<br/>
-	나에게 하고싶은 말은?<br/>
-	<textarea cols="30" rows="5" name="someting"></textarea>
-	<br/>
-	<input type="submit"/>
-	</form>
-	<a href="index1.html">1 페이지(자기소개)</a>   <a href="index2.html">2 페이지(가고 싶은 여행지)</a>
+	<div id="wrap">
+		<div id="top">
+			<a href="">로그인</a> |
+			<a href="">회원가입</a>
+		</div>
+		<div id="header">
+			<div id="header_top">
+				<div id="header_left">
+					<img src="images/donna2.jpg" alt="SH homepage">
+				</div>
+				<div id="header_rignt">
+					<h1>SH Homepage</h1>
+					<form action="/main.html">
+						<input type="text" name="search" id="search">
+						<input type="submit" value="Search" id="search_button">
+					</form>
+				</div>
+			</div>
+			<div id="navbar">
+				<ul>
+					<li><a href="main.html">HOME</a></li>
+					<li><a href="index1.html">나의 정보</a></li>
+					<li><a href="index2.html">가고싶은 여행지</a></li>
+					<li><a href="index3.html" class="selected">QUIZ</a></li>
+					<li><a href="">묻고 답하기</a></li>
+				</ul>
+			</div>
+			<div id="line">
+			</div>
+		</div>
+		<div id="content">
+			<h1>김소희는?</h1>
+			<form action="/update.php" method="post">
+			이름 : 
+				<input type="text" name="type" value="user"/>
+			<br/>
+			성별 : 
+				<input type="radio" name="sex" value="m"/>남
+				<input type="radio" name="sex" value="f"/>여
+			<br/>
+			나의 생일은 몇월? : <select name="month">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<br/>
+			나의 대학교는? : 
+			<input type="text" name="university" value="school"/>
+			<br/>
+			내가 가고 싶어하는 여행지는?
+			<input type="checkbox" name="song" value="1">이탈리아-피란체
+			<input type="checkbox" name="song" value="2">크로아티아-두브르브루크
+			<input type="checkbox" name="song" value="3">중국-북경
+			<input type="checkbox" name="song" value="4">체코-프라하
+			<input type="checkbox" name="song" value="5">일본-도쿄
+			<br/>
+			나에게 하고싶은 말은?<br/>
+			<textarea cols="30" rows="5" name="someting"></textarea>
+			<br/>
+			<input type="submit"/>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

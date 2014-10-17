@@ -3,19 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<title>자기 소개 페이지</title>
+	<link href="stylesheet/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1> 자기 소개 </h1>
-	<ul>
-		<li><span style="color:gray"><b>이름</b></span>  :  김소희</li>
-		<li><span style="color:gray"><b>성별</b></span>  :  여</li>
-		<li><span style="color:gray"><b>출생</b></span>  :  1992년 12월 10일</li>
-		<li><span style="color:gray"><b>지역</b></span> :  수원 
-		<li><span style="color:gray"><b>학교</b></span>  :  <a href="http://www.mju.ac.kr">명지대학교</a><img src="images/mju.gif" width=50 height=40 alt="myongji">
-		<li><span style="color:gray"><b>학과</b></span>  :  컴퓨터공학과</li>
-		<li><span style="color:gray"><b>학번</b></span>  :  60112329</li>
-		<li><span style="color:gray"><b>학년</b></span>  :  3학년</li>	
-	</ul>
-	<a href="index2.html">2 페이지(가고 싶은 여행지)</a>   <a href="index3.html">3 페이지(질문지)</a>
+	<div id="wrap">
+		<div id="top">
+			<a href="">로그인</a> |
+			<a href="">회원가입</a>
+		</div>
+		<div id="header">
+			<div id="header_top">
+				<div id="header_left">
+					<img src="images/donna2.jpg" alt="SH homepage">
+				</div>
+				<div id="header_rignt">
+					<h1>SH Homepage</h1>
+					<form action="/main.html">
+						<input type="text" name="search" id="search">
+						<input type="submit" value="Search" id="search_button">
+					</form>
+				</div>
+			</div>
+			<div id="navbar">
+				<ul>
+					<li><a href="main.html" >HOME</a></li>
+					<li><a href="index1.html" class="selected">나의 정보</a></li>
+					<li><a href="index2.html">가고싶은 여행지</a></li>
+					<li><a href="index3.html">QUIZ</a></li>
+					<li><a href="">묻고 답하기</a></li>
+				</ul>
+			</div>
+			<div id="line">
+			</div>
+		</div>
+		<div id="content">
+			<h1> 자기 소개 </h1>
+			<ul>
+				<li><span style="color:gray"><b>이름</b></span>  :  김소희</li>
+				<li><span style="color:gray"><b>성별</b></span>  :  여</li>
+				<li><span style="color:gray"><b>출생</b></span>  :  1992년 12월 10일</li>
+				<li><span style="color:gray"><b>지역</b></span> :  수원 
+				<li><span style="color:gray"><b>학교</b></span>  :  <a href="http://www.mju.ac.kr">명지대학교</a><img src="images/mju.gif" width=50 height=40 alt="myongji">
+				<li><span style="color:gray"><b>학과</b></span>  :  컴퓨터공학과</li>
+				<li><span style="color:gray"><b>학번</b></span>  :  60112329</li>
+				<li><span style="color:gray"><b>학년</b></span>  :  3학년</li>	
+			</ul>
+		</div>
+	</div>	
 </body>
 </html>
